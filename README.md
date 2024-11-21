@@ -66,3 +66,33 @@ Visualizations were created to provide a graphical representation of financial t
 1. Clone this repository:
    ```bash
    git clone <repository-url>
+
+
+
+
+# Financial Chatbot Prototype
+
+## Overview
+This is a simple chatbot prototype designed to respond to predefined financial queries. It uses Flask to serve responses based on analyzed financial data.
+
+## Predefined Queries
+1. "What is the total revenue?"
+2. "How has net income changed over the last year?"
+3. "What are the average assets and liabilities?"
+4. "What is the cash flow from operating activities?"
+5. "Can you summarize the financial performance?"
+
+## How It Works
+- User sends a query to the `/chatbot` endpoint via a POST request.
+- The chatbot matches the query to predefined responses using simple logic.
+- If the query matches, the chatbot returns the corresponding response. Otherwise, it responds with an error message.
+
+## Limitations
+- The chatbot only supports predefined queries.
+- It does not process dynamic queries or perform real-time data analysis.
+- It requires accurate and complete input to provide the correct response.
+
+## Running the Chatbot
+1. Install the required libraries:
+   ```bash
+   pip install flask
